@@ -1,0 +1,166 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+  color: rgb(251, 255, 0);
+  padding: 0 4rem;
+}
+
+@media (min-width: 667px) {
+  h1 {
+    font-size: 6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 8rem;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 16rem;
+  color: rgb(251, 255, 0);
+  ;
+}
+
+@media (min-width: 667px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  h3 {
+    font-size: 3rem;
+  }
+}
+
+label {
+  font-size: 1rem;
+}
+
+.hero {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+input:focus {
+  outline: 5px solid rgb(251, 255, 0);
+  outline-offset: 2px;
+}
+
+select:focus {
+  outline: 5px solid rgb(251, 255, 0);
+  outline-offset: 2px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #e3e3e3;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  max-width: 800px;
+  border: #1b1b1a solid 2px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+input,
+select {
+  padding: 1rem;
+  border: 2px solid #5b5b59;
+  border-radius: 5px;
+  background-color: white;
+  color: rgb(4, 4, 4);
+  font-size: 1rem;
+}
+
+.name-inputs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 667px) {
+  .name-inputs-container {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+.name-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#terms {
+  transform: scale(2);
+  margin-right: 0.5rem;
+}
+
+button {
+  padding: 1rem 2rem;
+  border: 1px solid #5b5b59;
+  border-radius: 5px;
+  background-color: rgb(251, 255, 0);
+  color: #000000;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #1b1b1a;
+  color: rgb(251, 255, 0);
+}
